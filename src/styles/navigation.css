@@ -298,25 +298,17 @@
   }
 }
 
-/* GenSpark-inspired scroll surface; header geometry stays stable for anchors. */
+/* Opaque scroll surface prevents page content bleeding through in any renderer. */
 .site-header {
   transition:
     background-color 320ms var(--ease-out),
-    box-shadow 320ms var(--ease-out),
-    backdrop-filter 320ms var(--ease-out);
+    box-shadow 320ms var(--ease-out);
 }
 .site-header[data-scrolled='true'] {
-  background-color: rgb(246 244 239 / 82%);
-  backdrop-filter: blur(18px) saturate(1.4);
-  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  background-color: var(--paper);
   box-shadow:
     0 1px 0 var(--line),
     0 8px 24px #07163c06;
-}
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .site-header[data-scrolled='true'] {
-    background-color: var(--paper);
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   .site-header {

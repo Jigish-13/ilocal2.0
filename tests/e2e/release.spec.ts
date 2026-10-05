@@ -69,3 +69,13 @@ for (const [width, height] of [
     await expect(page.locator('.site-layout-illustration')).toBeAttached();
   });
 }
+
+test('scrolled header stays opaque without relying on backdrop blur', async ({ page }) => {
+  await page.goto('/');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.evaluate(() => window.scrollTo({ top: 550, behavior: 'instant' }));
+  const header = page.locator('.site-header');
+  await expect(header).toHaveAttribute('data-scrolled', 'true');
+  await expect(header).toHaveCSS('background-color', 'rgb(246, 244, 239)');
+  await expect(header).toHaveCSS('opacity', '1');
+});
