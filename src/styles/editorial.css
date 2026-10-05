@@ -637,9 +637,28 @@
   color: var(--blue);
 }
 .installation-story > div > p:not(.eyebrow) {
-  max-width: 430px;
-  font-size: 1rem;
+  max-width: 580px;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  line-height: 1.6;
   color: var(--muted);
+}
+.installation-diagram {
+  margin: 0;
+  padding: clamp(16px, 2vw, 30px);
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: clamp(20px, 2vw, 32px);
+}
+.installation-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.installation-story > div > p.installation-caption {
+  margin-top: 28px;
+  font-size: var(--type-caption);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .installation-story .installation-review {
   margin-top: 22px;

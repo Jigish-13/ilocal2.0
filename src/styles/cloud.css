@@ -1,0 +1,277 @@
+/* GenSpark-inspired composition, implemented with illustrative product content. */
+.cloud-genspark {
+  background: var(--paper);
+}
+.cloud-genspark .section-heading {
+  align-items: center;
+  margin-bottom: 72px;
+}
+.cloud-genspark .section-heading h2 {
+  max-width: 850px;
+}
+.cloud-genspark .section-heading h2 em {
+  color: var(--ink);
+}
+.cloud-genspark .cloud-layout {
+  grid-template-columns: minmax(250px, 0.85fr) minmax(0, 2.35fr);
+  gap: 36px;
+}
+.cloud-genspark .cloud-tabs {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.cloud-genspark .cloud-tab-item {
+  border-radius: 22px;
+}
+.cloud-genspark .cloud-tabs button {
+  grid-template-columns: 28px minmax(0, 1fr);
+  padding: 25px 24px;
+  width: 100%;
+  min-height: 76px;
+}
+.cloud-genspark .cloud-tabs button strong {
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  font-weight: 600;
+}
+.cloud-genspark .cloud-tab-description {
+  padding: 0 24px 26px 62px;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.cloud-genspark .cloud-tab-number {
+  font-size: 0.8125rem;
+}
+.cloud-genspark .cloud-shell {
+  border: 9px solid var(--navy);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px #07163c0d;
+}
+.cloud-genspark .cloud-toolbar {
+  padding: 15px 16px 23px;
+}
+.cloud-genspark .console-dots {
+  display: block;
+  font-size: 0.8rem;
+  color: #8993ab;
+  white-space: nowrap;
+}
+.cloud-genspark .cloud-canvas-brand {
+  font-family: monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  color: #c0c8db;
+}
+.cloud-genspark .console-body {
+  display: grid;
+  grid-template-columns: 66px minmax(0, 1fr);
+  border-radius: 18px;
+  overflow: hidden;
+}
+.cloud-genspark .console-rail {
+  display: flex;
+  padding: 26px 10px;
+  gap: 12px;
+}
+.cloud-genspark .console-rail strong {
+  font-weight: 700;
+}
+.cloud-genspark .console-rail > span {
+  width: 36px;
+  height: 36px;
+  background: #e5e2d9;
+  border-radius: 11px;
+  font-size: 1.2rem;
+}
+.cloud-genspark .console-rail > span[data-selected='true'] {
+  background: var(--blue);
+}
+.cloud-genspark .cloud-panel {
+  padding: 30px;
+  min-height: 575px;
+}
+.cloud-genspark .cloud-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.cloud-genspark .cloud-panel-heading h3 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  letter-spacing: -0.045em;
+}
+.cloud-genspark .cloud-example-badge {
+  background: var(--paper);
+  border-radius: 99px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.cloud-status-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.cloud-status-cards > div {
+  padding: 22px 18px;
+  background: var(--paper);
+  border-radius: 18px;
+}
+.cloud-status-cards span {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.cloud-status-cards strong {
+  display: inline-block;
+  margin-top: 18px;
+  background: white;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.cloud-genspark .state-pill {
+  background: var(--paper);
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.cloud-genspark .state-pill::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+.cloud-genspark .state-complete::before {
+  background: var(--teal);
+}
+.cloud-genspark .state-in-progress::before {
+  background: var(--gold);
+}
+.cloud-custody {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cloud-custody li {
+  display: flex;
+  gap: 22px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.cloud-custody li > span {
+  display: grid;
+  place-items: center;
+  align-self: start;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--ink);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+.cloud-custody p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+.cloud-reporting > div {
+  display: grid;
+  grid-template-columns: 0.75fr 1fr;
+  gap: 8px 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.9375rem;
+}
+.cloud-reporting > div > span:last-child {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+@media (max-width: 1100px) {
+  .cloud-genspark .cloud-layout {
+    grid-template-columns: 1fr;
+  }
+  .cloud-genspark .cloud-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .cloud-genspark .cloud-tab-description {
+    padding-left: 62px;
+  }
+}
+@media (max-width: 700px) {
+  .cloud-genspark .section-heading {
+    margin-bottom: 36px;
+  }
+  .cloud-genspark .section-heading h2 br {
+    display: none;
+  }
+  .cloud-genspark .cloud-tabs {
+    grid-template-columns: 1fr;
+  }
+  .cloud-genspark .cloud-tabs button {
+    padding: 16px;
+    min-height: 54px;
+  }
+  .cloud-genspark .cloud-tab-description {
+    padding: 0 16px 18px 54px;
+    font-size: 0.9375rem;
+  }
+  .cloud-genspark .cloud-shell {
+    border-width: 5px;
+    border-radius: 20px;
+  }
+  .cloud-genspark .cloud-toolbar {
+    padding: 12px 10px 16px;
+    gap: 10px;
+  }
+  .cloud-genspark .console-dots {
+    display: none;
+  }
+  .cloud-genspark .cloud-canvas-brand {
+    font-size: 0.75rem;
+  }
+  .cloud-genspark .cloud-toolbar .illustrative-label {
+    font-size: 0.6875rem;
+    margin-left: 0;
+  }
+  .cloud-genspark .console-body {
+    display: block;
+    border-radius: 12px;
+  }
+  .cloud-genspark .console-rail {
+    display: none;
+  }
+  .cloud-genspark .cloud-panel {
+    padding: 22px 14px;
+    min-height: 0;
+  }
+  .cloud-genspark .cloud-panel-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cloud-status-cards {
+    gap: 8px;
+  }
+  .cloud-status-cards > div {
+    padding: 14px 9px;
+    border-radius: 12px;
+  }
+  .cloud-status-cards span {
+    font-size: 0.6875rem;
+    letter-spacing: 0.03em;
+  }
+  .cloud-status-cards strong {
+    font-size: 0.75rem;
+    padding: 4px;
+    margin-top: 12px;
+  }
+}

@@ -57,16 +57,16 @@ for (const [width, height] of [
           .evaluate((el) => parseFloat(getComputedStyle(el).fontSize)),
       ).toBeGreaterThanOrEqual(15);
     }
-    const tab = page.getByRole('tab', { name: 'Devices & Hardware', exact: true });
+    const tab = page.getByRole('tab', { name: 'Device monitoring', exact: true });
     await tab.click();
     expect(await tab.evaluate((el) => el.matches(':focus-visible'))).toBe(false);
     await page.keyboard.press('ArrowRight');
-    const focused = page.getByRole('tab', { name: 'Workflow Configuration', exact: true });
+    const focused = page.getByRole('tab', { name: 'Reporting', exact: true });
     await expect(focused).toBeFocused();
     expect(
       await focused.evaluate((el) => parseFloat(getComputedStyle(el).outlineWidth)),
     ).toBeGreaterThanOrEqual(3);
-    await expect(page.locator('.site-layout-illustration')).toBeAttached();
+    await expect(page.locator('.installation-diagram img')).toBeAttached();
   });
 }
 

@@ -17,8 +17,8 @@ test('extension-injected body attributes do not trigger hydration errors', async
   });
   await page.goto('/', { waitUntil: 'networkidle' });
   await expect(page.locator('body')).toHaveAttribute('data-gr-ext-installed', '');
-  await page.getByRole('tab', { name: 'Devices & Hardware', exact: true }).click();
-  await expect(page.getByRole('tabpanel')).toContainText('Your hardware, connected.');
+  await page.getByRole('tab', { name: 'Device monitoring', exact: true }).click();
+  await expect(page.getByRole('tabpanel')).toContainText('Your hardware, connected');
   expect(errors.filter((message) => /hydrat|didn't match|server rendered/i.test(message))).toEqual(
     [],
   );

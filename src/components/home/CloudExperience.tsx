@@ -2,19 +2,24 @@
 import Image from 'next/image';
 import { useState, type KeyboardEvent } from 'react';
 import { SectionLabel } from '@/components/ui/SectionLabel';
-import { cloudViews, configuredSteps, fulfillmentExamples } from '@/content/platform-visuals';
+import {
+  cloudViews,
+  cloudCustodySteps,
+  configuredSteps,
+  fulfillmentExamples,
+} from '@/content/platform-visuals';
 export function CloudExperience() {
   const [active, setActive] = useState(0);
   function keys(e: KeyboardEvent<HTMLButtonElement>, i: number) {
     const n =
       e.key === 'ArrowRight' || e.key === 'ArrowDown'
-        ? (i + 1) % 3
+        ? (i + 1) % cloudViews.length
         : e.key === 'ArrowLeft' || e.key === 'ArrowUp'
-          ? (i + 2) % 3
+          ? (i + cloudViews.length - 1) % cloudViews.length
           : e.key === 'Home'
             ? 0
             : e.key === 'End'
-              ? 2
+              ? cloudViews.length - 1
               : -1;
     if (n >= 0) {
       e.preventDefault();
@@ -24,7 +29,7 @@ export function CloudExperience() {
   }
   return (
     <section
-      className="cloud section-space editorial-section"
+      className="cloud cloud-genspark section-space editorial-section"
       id="cloud"
       aria-labelledby="cloud-title"
     >
@@ -32,13 +37,13 @@ export function CloudExperience() {
         <SectionLabel number="06">iLocal Cloud</SectionLabel>
         <div className="section-heading">
           <h2 id="cloud-title">
-            The whole picture.
-            <br />
-            <em>One place to see it.</em>
+            Every site, device and <br />
+            handoff. <em>One view.</em>
           </h2>
           <p>
-            A connected view for the people behind every handoff. Follow fulfillment, see supported
-            hardware signals and configure the patient experience.
+            Browser-based management for the people who run pharmacy fulfillment—configure
+            workflows, follow fulfillment, watch device health and report across locations. Nothing
+            to install at the desk.
           </p>
         </div>
         <div className="cloud-layout">
@@ -60,7 +65,6 @@ export function CloudExperience() {
                   <span>
                     <strong>{view.name}</strong>
                   </span>
-                  <span className="cloud-tab-arrow" aria-hidden="true" />
                 </button>
                 <p
                   id={`cloud-description-${i}`}
@@ -74,12 +78,21 @@ export function CloudExperience() {
           </div>
           <div className="cloud-shell">
             <div className="cloud-toolbar">
-              <span className="cloud-canvas-brand">
-                iLocal <em>Cloud</em>
+              <span className="console-dots" aria-hidden="true">
+                ● ● ●
               </span>
+              <span className="cloud-canvas-brand">cloud.ilocal / operations</span>
               <span className="illustrative-label">Illustrative interface</span>
             </div>
             <div className="console-body">
+              <aside className="console-rail" aria-hidden="true">
+                <strong>iL</strong>
+                {cloudViews.map((view, i) => (
+                  <span key={view.name} data-selected={active === i}>
+                    {['↗', '✓', '▣', '≡', '≋'][i]}
+                  </span>
+                ))}
+              </aside>
               <div className="console-content">
                 {cloudViews.map((view, i) => (
                   <div
@@ -90,37 +103,29 @@ export function CloudExperience() {
                     hidden={active !== i}
                     className="cloud-panel"
                   >
-                    <div className="console-context">
-                      <span>
-                        PLATFORM / {i === 0 ? 'FULFILLMENT' : i === 1 ? 'HARDWARE' : 'WORKFLOWS'}
-                      </span>
-                      <span>Example workspace</span>
-                    </div>
                     <div className="cloud-panel-heading">
                       <h3>
-                        {i === 0
-                          ? 'Every handoff, in view.'
-                          : i === 1
-                            ? 'Your hardware, connected.'
-                            : 'Configured for your pharmacy.'}
+                        {
+                          [
+                            'Today across sites',
+                            'From assignment to handoff',
+                            'Your hardware, connected',
+                            'Activity across locations',
+                            'Your pharmacy’s workflow',
+                          ][i]
+                        }
                       </h3>
-                      <span>Sample configuration</span>
+                      <span className="cloud-example-badge">Sample view</span>
                     </div>
                     {i === 0 ? (
                       <>
-                        <div className="console-summary">
-                          <div>
-                            <small>Readiness</small>
-                            <strong>Assign → Verify</strong>
-                          </div>
-                          <div>
-                            <small>Custody</small>
-                            <strong>Stock → Hand off</strong>
-                          </div>
-                          <div>
-                            <small>Reconciliation</small>
-                            <strong>Complete → Review</strong>
-                          </div>
+                        <div className="cloud-status-cards">
+                          {['Ready', 'In progress', 'Exceptions'].map((status) => (
+                            <div key={status}>
+                              <span>{status}</span>
+                              <strong>Example status</strong>
+                            </div>
+                          ))}
                         </div>
                         <div className="fulfillment-ledger">
                           <div className="ledger-heading" aria-hidden="true">
@@ -149,6 +154,18 @@ export function CloudExperience() {
                         </div>
                       </>
                     ) : i === 1 ? (
+                      <ol className="cloud-custody">
+                        {cloudCustodySteps.map(([title, description], index) => (
+                          <li key={title}>
+                            <span aria-hidden="true">0{index + 1}</span>
+                            <div>
+                              <strong>{title}</strong>
+                              <p>{description}</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ol>
+                    ) : i === 2 ? (
                       <>
                         <div className="device-overview">
                           <figure className="cloud-hardware-visual">
@@ -208,6 +225,20 @@ export function CloudExperience() {
                           <small>Example trend · no live readings</small>
                         </div>
                       </>
+                    ) : i === 3 ? (
+                      <div className="cloud-reporting">
+                        <p className="eyebrow">Fulfillment activity / illustrative report</p>
+                        {fulfillmentExamples.map((row) => (
+                          <div key={row.path}>
+                            <strong>{row.path}</strong>
+                            <span>{row.location}</span>
+                            <span>Activity · custody · reconciliation</span>
+                          </div>
+                        ))}
+                        <p className="console-note">
+                          Example report structure. No live records or numerical metrics are shown.
+                        </p>
+                      </div>
                     ) : (
                       <>
                         <div className="config-preview">

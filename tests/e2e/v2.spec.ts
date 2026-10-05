@@ -13,7 +13,13 @@ for (const width of [320, 360, 390, 430, 768, 1024, 1366, 1440, 1920, 2560]) {
     await expect(page.locator('body')).not.toContainText(/formerly ilocalbox/i);
     const overflow = () => page.evaluate(() => document.documentElement.scrollWidth > innerWidth);
     expect(await overflow()).toBe(false);
-    for (const name of ['Fulfillment Visibility', 'Devices & Hardware', 'Workflow Configuration']) {
+    for (const name of [
+      'Fulfillment tracking',
+      'Custody & verification',
+      'Device monitoring',
+      'Reporting',
+      'Workflow configuration',
+    ]) {
       await page.getByRole('tab', { name, exact: true }).click();
       await expect(page.getByRole('tabpanel')).toBeVisible();
       expect(await overflow(), `Cloud: ${name}`).toBe(false);

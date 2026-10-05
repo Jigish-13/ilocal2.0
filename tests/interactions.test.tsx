@@ -9,12 +9,18 @@ vi.mock('next/image', () => ({
 describe('homepage interactions', () => {
   it('moves between Cloud tabs with arrows and Home', () => {
     render(<CloudExperience />);
-    const first = screen.getByRole('tab', { name: 'Fulfillment Visibility' });
+    const first = screen.getByRole('tab', { name: 'Fulfillment tracking' });
     fireEvent.keyDown(first, { key: 'ArrowRight' });
-    expect(screen.getByRole('tab', { name: 'Devices & Hardware' })).toHaveFocus();
-    expect(screen.getByText('Main pickup unit')).toBeVisible();
-    fireEvent.keyDown(screen.getByRole('tab', { name: 'Devices & Hardware' }), { key: 'Home' });
+    expect(screen.getByRole('tab', { name: 'Custody & verification' })).toHaveFocus();
+    expect(screen.getByText('Pharmacy verification recorded')).toBeVisible();
+    fireEvent.keyDown(screen.getByRole('tab', { name: 'Custody & verification' }), { key: 'Home' });
     expect(first).toHaveAttribute('aria-selected', 'true');
+    fireEvent.keyDown(first, { key: 'End' });
+    const last = screen.getByRole('tab', { name: 'Workflow configuration' });
+    expect(last).toHaveFocus();
+    expect(screen.getByText('Your workflow.')).toBeVisible();
+    fireEvent.keyDown(last, { key: 'ArrowRight' });
+    expect(first).toHaveFocus();
   });
   it('adds and removes authentic optional modules while retaining the main unit', () => {
     render(<HardwareConfigurator />);

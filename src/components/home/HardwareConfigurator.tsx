@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { hardware, type HardwareId } from '@/content/hardware';
 import { hardwareCapabilities } from '@/content/platform-visuals';
 import { SectionLabel } from '@/components/ui/SectionLabel';
-import { SiteLayoutIllustration } from '@/components/ui/SiteLayoutIllustration';
 export function HardwareConfigurator() {
   const [selected, setSelected] = useState<HardwareId[]>(['main']);
   const [focus, setFocus] = useState<HardwareId>('main');
@@ -89,25 +88,24 @@ export function HardwareConfigurator() {
           ))}
         </div>
         <div className="installation-story" id="installation">
-          <div
-            className="installation-planning"
-            role="group"
-            aria-label="Site planning considers staff access, hardware placement and patient access"
-          >
-            <span className="eyebrow">A place for every handoff</span>
-            <SiteLayoutIllustration />
-            <p>Placement · access · workflow</p>
-          </div>
+          <figure className="installation-diagram">
+            <Image
+              src="/hardware/installation-in-wall.png"
+              width={863}
+              height={676}
+              sizes="(max-width: 700px) 90vw, 45vw"
+              alt="Legacy installation diagram showing rear compartment stocking from the pharmacy side and patient collection on the store side, with back and wall cross-section views."
+            />
+          </figure>
           <div>
             <p className="eyebrow">Installation flexibility</p>
-            <h3>
-              Plan for both sides
-              <br />
-              <em>of the handoff.</em>
-            </h3>
+            <h3>Stock from behind the wall. Collect from the front.</h3>
             <p>
-              Connect pharmacy operations to the patient pickup experience. Talk with iLocal about
-              the layout, staff access and requirements of your site.
+              Through-wall installations let technicians scan and load from inside the pharmacy,
+              keeping medication within pharmacy control while patients collect on the store side.
+            </p>
+            <p className="installation-caption">
+              Diagram from legacy materials · to be redrawn in the iLocal system
             </p>
             <p className="installation-review">
               Through-wall installation details are pending confirmation. Current availability and

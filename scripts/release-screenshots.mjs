@@ -64,7 +64,13 @@ try {
     await capture('navigation-open');
     await page.keyboard.press('Escape');
     await capture('five-path-platform', '#platform');
-    const names = ['Fulfillment Visibility', 'Devices & Hardware', 'Workflow Configuration'];
+    const names = [
+      'Fulfillment tracking',
+      'Custody & verification',
+      'Device monitoring',
+      'Reporting',
+      'Workflow configuration',
+    ];
     for (let i = 0; i < names.length; i++) {
       await page.getByRole('tab', { name: names[i], exact: true }).click();
       await capture(`cloud-${i + 1}`, '#cloud');

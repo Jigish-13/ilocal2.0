@@ -16,17 +16,33 @@ export const platformCapabilities = [
 ];
 export const cloudViews = [
   {
-    name: 'Fulfillment Visibility',
-    description: 'Follow readiness, custody and the next handoff across paths and locations.',
+    name: 'Fulfillment tracking',
+    description: 'Follow fulfillment status across every supported path and site.',
   },
   {
-    name: 'Devices & Hardware',
-    description: 'See connectivity, compartment availability and supported hardware signals.',
+    name: 'Custody & verification',
+    description: 'A step-by-step record from assignment to handoff.',
   },
   {
-    name: 'Workflow Configuration',
-    description: 'Bring patient preparation and arrival into your pharmacy’s workflow.',
+    name: 'Device monitoring',
+    description: 'Device health, hardware signals and temperature where supported.',
   },
+  {
+    name: 'Reporting',
+    description: 'Review fulfillment activity and reconciliation across locations.',
+  },
+  {
+    name: 'Workflow configuration',
+    description: 'Choose the steps and messages for each site and path.',
+  },
+] as const;
+export const cloudCustodySteps = [
+  ['Assigned', 'Fulfillment path selected'],
+  ['Verified', 'Pharmacy verification recorded'],
+  ['Stocked', 'Stocking and custody recorded'],
+  ['Notified', 'Patient preparation begins'],
+  ['Handed off', 'Collection or delivery recorded'],
+  ['Reconciled', 'Completed activity available for review'],
 ] as const;
 export const fulfillmentExamples = [
   {

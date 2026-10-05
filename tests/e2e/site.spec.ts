@@ -49,7 +49,7 @@ test('demo form validates, submits safe mock and does not claim delivery', async
 test('Cloud, patient, hardware and audiences work with reduced motion', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/');
-  await page.getByRole('tab', { name: 'Workflow Configuration' }).click();
+  await page.getByRole('tab', { name: 'Workflow configuration' }).click();
   await expect(page.getByRole('tabpanel')).toContainText('Patient preparation');
   if (await page.getByLabel('Explore the patient journey', { exact: true }).isVisible()) {
     await page.getByLabel('Explore the patient journey', { exact: true }).selectOption('2');
@@ -90,10 +90,10 @@ test('keyboard menus, skip link and focus recovery', async ({ page, browserName 
     await page.keyboard.press('Escape');
     await expect(platform).toBeFocused();
   }
-  const cloud = page.getByRole('tab', { name: 'Fulfillment Visibility' });
+  const cloud = page.getByRole('tab', { name: 'Fulfillment tracking' });
   await cloud.focus();
   await page.keyboard.press('ArrowRight');
-  await expect(page.getByRole('tab', { name: 'Devices & Hardware' })).toBeFocused();
+  await expect(page.getByRole('tab', { name: 'Custody & verification' })).toBeFocused();
 });
 test('homepage and contact accessibility', async ({ page }) => {
   await page.goto('/');
