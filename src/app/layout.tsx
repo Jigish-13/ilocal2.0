@@ -21,18 +21,19 @@ const serif = localFont({
 export const metadata: Metadata = {
   ...pageMetadata(
     'The Pharmacy-to-Patient Platform',
-    'Connect pharmacies and patients across Kiosk, Counter, Curbside, Bedside, Courier and Mail Order. One connected platform.',
+    'Connect pharmacies and patients across Kiosk, Counter, Curbside, Bedside and Courier. One connected platform.',
     '/',
   ),
   metadataBase: new URL(siteUrl),
   title: { default: 'iLocal — The Pharmacy-to-Patient Platform', template: '%s | iLocal' },
   robots: { index: isPublicSite, follow: isPublicSite },
-  icons: { icon: '/icon.png', apple: '/apple-icon.png' },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${sans.variable} ${serif.variable}`}>
-      <body>
+      {/* Extensions such as Grammarly add body attributes before hydration.
+          Only tolerate mismatches on this element; descendants remain checked. */}
+      <body suppressHydrationWarning>
         <a className="skip-link" href="#main">
           Skip to content
         </a>

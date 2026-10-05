@@ -2,7 +2,7 @@ import { FinalCTA } from '@/components/home/FinalCTA';
 import { pageMetadata } from '@/lib/seo/metadata';
 export const metadata = pageMetadata(
   'Book a Demo',
-  'Explore how iLocal can connect your pharmacy and patients across six fulfillment experiences.',
+  'Explore how iLocal can connect your pharmacy and patients across five fulfillment experiences.',
   '/contact',
 );
 export default function ContactPage() {

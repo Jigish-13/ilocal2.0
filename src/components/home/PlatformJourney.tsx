@@ -7,7 +7,7 @@ import { SectionLabel } from '@/components/ui/SectionLabel';
 const stages = [
   'It starts in your pharmacy.',
   'iLocal becomes the connecting layer.',
-  'One platform. Six ways to fulfill.',
+  'One platform. Five ways to fulfill.',
   'Every route ends with the patient.',
 ];
 export function PlatformJourney() {
@@ -51,7 +51,7 @@ export function PlatformJourney() {
             className="route-svg"
             viewBox="0 0 1120 440"
             role="img"
-            aria-label={`Pharmacy connects through iLocal to six fulfillment methods and then to the patient. Highlighted: ${selected.name}.`}
+            aria-label={`Pharmacy connects through iLocal to five fulfillment methods and then to the patient. Highlighted: ${selected.name}.`}
           >
             <path className="route-trunk" d="M90 220 H310" />
             <circle cx="90" cy="220" r="7" fill="#f5c449" />
@@ -63,7 +63,7 @@ export function PlatformJourney() {
               iLocal
             </text>
             {solutions.map((s, i) => {
-              const y = 45 + i * 70;
+              const y = 60 + i * 80;
               const d = `M396 220 C485 220 490 ${y} 580 ${y} H710 C870 ${y} 875 220 1005 220`;
               return (
                 <g

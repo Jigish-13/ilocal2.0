@@ -7,3 +7,5 @@ test-results
 
 docs/validation
 next-env.d.ts
+
+.next-local

@@ -11,7 +11,7 @@ npm ci
 npm run dev -- --port 3002
 ```
 
-Open http://127.0.0.1:3002. The development demo form uses a safe mock: it validates requests, but never logs, saves, or sends contact details. Use fictitious test data.
+Open http://127.0.0.1:3002. For the design preview on port 3007, use `npm run dev -- --port 3007`. Development uses its own `.next-local` output, so production builds do not replace its CSS/JavaScript. Stop and restart a production preview after rebuilding; use development mode for live design edits. The development demo form uses a safe mock: it validates requests, but never logs, saves, or sends contact details. Use fictitious test data.
 
 To check the optimized production build locally:
 

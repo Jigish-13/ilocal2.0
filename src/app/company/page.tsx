@@ -30,7 +30,7 @@ export default function CompanyPage() {
           </h2>
           <p>
             From the self-service kiosk to a personal handoff at the counter, at the curb or at the
-            bedside, iLocal connects pharmacy fulfillment. Courier and Mail Order extend that
+            bedside, iLocal connects pharmacy fulfillment. Courier extends that
             relationship beyond a physical visit.
           </p>
           <p>

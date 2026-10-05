@@ -10,7 +10,7 @@
 ## Milestones
 
 - [x] Foundation: Next 16 / React 19, typed content, tokens, official brand, accessible navigation, hero. Inspect desktop/mobile before extending.
-- [x] Signature interactions: opportunity, scroll route, six chapters, patient journey. Interaction tests and responsive review.
+- [x] Signature interactions: opportunity, scroll route, five chapters, patient journey. Interaction tests and responsive review.
 - [x] Full experience: workflow, Cloud, hardware, audiences, scenarios, trust, demo adapter, footer, detail routes and SEO.
 - [x] Release checks: lint, types, unit tests, production build, browser smoke/keyboard/reduced motion, accessibility, Lighthouse and responsive screenshots.
 

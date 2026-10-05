@@ -10,7 +10,9 @@ describe('navigation', () => {
     const button = screen.getByRole('button', { name: 'Platform' });
     fireEvent.click(button);
     expect(button).toHaveAttribute('aria-expanded', 'true');
-    expect(screen.getByRole('link', { name: /Pharmacy Integrations Alongside/ })).toBeVisible();
+    expect(
+      screen.getByRole('link', { name: /Pharmacy Integrations Work alongside/ }),
+    ).toBeVisible();
     fireEvent.keyDown(button, { key: 'Escape' });
     expect(button).toHaveAttribute('aria-expanded', 'false');
     expect(button).toHaveFocus();

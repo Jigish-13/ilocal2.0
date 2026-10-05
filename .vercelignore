@@ -1,0 +1,7 @@
+screenshots/
+screenshots.zip
+docs/
+.next-local/
+playwright-report/
+test-results/
+coverage/

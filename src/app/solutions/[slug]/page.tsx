@@ -22,7 +22,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
   return (
     <main id="main" tabIndex={-1}>
       <section
-        className={`solution-hero chapter-${solution.id} ${['kiosk', 'curbside', 'mail-order'].includes(solution.id) ? 'on-dark' : ''}`}
+        className={`solution-hero chapter-${solution.id} ${['kiosk', 'curbside'].includes(solution.id) ? 'on-dark' : ''}`}
       >
         <div className="wrap">
           <Link href="/solutions" className="breadcrumb">

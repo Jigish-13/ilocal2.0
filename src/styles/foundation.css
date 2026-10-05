@@ -352,10 +352,6 @@ button:disabled {
   align-items: center;
   margin-bottom: 40px;
 }
-.formerly {
-  font-size: 0.7rem;
-  color: var(--muted);
-}
 .hero h1 {
   font-size: clamp(3.1rem, 7.25vw, 7.4rem);
   letter-spacing: -0.055em;
@@ -569,9 +565,6 @@ button:disabled {
 .dot-courier {
   background: #b58215;
 }
-.dot-mail-order {
-  background: #c97840;
-}
 @media (min-width: 1500px) {
   .hero {
     padding-top: 65px;
@@ -667,9 +660,6 @@ button:disabled {
   }
   .hero-kicker {
     margin-bottom: 28px;
-  }
-  .formerly {
-    display: none;
   }
   .hero .eyebrow {
     font-size: 0.57rem;

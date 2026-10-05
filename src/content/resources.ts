@@ -8,10 +8,10 @@ export const resources = [
       'Counter connects patient preparation with a staffed pharmacy handoff.',
       'Curbside brings arrival and vehicle details into a staff-delivered handoff.',
       'Bedside connects the pharmacy, runner and patient room before discharge.',
-      'Courier and Mail Order extend fulfillment beyond an in-person pharmacy visit.',
+      'Courier extends fulfillment beyond an in-person pharmacy visit.',
     ],
     link: '/solutions',
-    linkLabel: 'Explore all six experiences',
+    linkLabel: 'Explore all five experiences',
   },
   {
     id: 'patient-experience',

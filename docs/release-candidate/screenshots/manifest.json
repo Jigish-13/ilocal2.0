@@ -1,0 +1,387 @@
+[
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "homepage-first-screen",
+    "file": "desktop/homepage-first-screen.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "navbar",
+    "file": "desktop/navbar.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "navigation-open",
+    "file": "desktop/navigation-open.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "five-path-platform",
+    "file": "desktop/five-path-platform.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "cloud-1",
+    "file": "desktop/cloud-1.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "cloud-2",
+    "file": "desktop/cloud-2.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "cloud-3",
+    "file": "desktop/cloud-3.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "hardware",
+    "file": "desktop/hardware.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "installation-flexibility",
+    "file": "desktop/installation-flexibility.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "final-cta",
+    "file": "desktop/final-cta.png"
+  },
+  {
+    "profile": "desktop",
+    "width": 1440,
+    "height": 1000,
+    "label": "footer",
+    "file": "desktop/footer.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "homepage-first-screen",
+    "file": "desktop-wide/homepage-first-screen.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "navbar",
+    "file": "desktop-wide/navbar.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "navigation-open",
+    "file": "desktop-wide/navigation-open.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "five-path-platform",
+    "file": "desktop-wide/five-path-platform.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "cloud-1",
+    "file": "desktop-wide/cloud-1.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "cloud-2",
+    "file": "desktop-wide/cloud-2.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "cloud-3",
+    "file": "desktop-wide/cloud-3.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "hardware",
+    "file": "desktop-wide/hardware.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "installation-flexibility",
+    "file": "desktop-wide/installation-flexibility.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "final-cta",
+    "file": "desktop-wide/final-cta.png"
+  },
+  {
+    "profile": "desktop-wide",
+    "width": 1920,
+    "height": 1080,
+    "label": "footer",
+    "file": "desktop-wide/footer.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "homepage-first-screen",
+    "file": "tablet/homepage-first-screen.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "navbar",
+    "file": "tablet/navbar.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "navigation-open",
+    "file": "tablet/navigation-open.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "five-path-platform",
+    "file": "tablet/five-path-platform.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "cloud-1",
+    "file": "tablet/cloud-1.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "cloud-2",
+    "file": "tablet/cloud-2.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "cloud-3",
+    "file": "tablet/cloud-3.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "hardware",
+    "file": "tablet/hardware.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "installation-flexibility",
+    "file": "tablet/installation-flexibility.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "final-cta",
+    "file": "tablet/final-cta.png"
+  },
+  {
+    "profile": "tablet",
+    "width": 768,
+    "height": 1024,
+    "label": "footer",
+    "file": "tablet/footer.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "homepage-first-screen",
+    "file": "mobile/homepage-first-screen.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "navbar",
+    "file": "mobile/navbar.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "navigation-open",
+    "file": "mobile/navigation-open.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "five-path-platform",
+    "file": "mobile/five-path-platform.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "cloud-1",
+    "file": "mobile/cloud-1.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "cloud-2",
+    "file": "mobile/cloud-2.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "cloud-3",
+    "file": "mobile/cloud-3.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "hardware",
+    "file": "mobile/hardware.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "installation-flexibility",
+    "file": "mobile/installation-flexibility.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "final-cta",
+    "file": "mobile/final-cta.png"
+  },
+  {
+    "profile": "mobile",
+    "width": 390,
+    "height": 844,
+    "label": "footer",
+    "file": "mobile/footer.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "homepage-first-screen",
+    "file": "mobile-small/homepage-first-screen.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "navbar",
+    "file": "mobile-small/navbar.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "navigation-open",
+    "file": "mobile-small/navigation-open.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "five-path-platform",
+    "file": "mobile-small/five-path-platform.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "cloud-1",
+    "file": "mobile-small/cloud-1.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "cloud-2",
+    "file": "mobile-small/cloud-2.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "cloud-3",
+    "file": "mobile-small/cloud-3.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "hardware",
+    "file": "mobile-small/hardware.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "installation-flexibility",
+    "file": "mobile-small/installation-flexibility.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "final-cta",
+    "file": "mobile-small/final-cta.png"
+  },
+  {
+    "profile": "mobile-small",
+    "width": 360,
+    "height": 800,
+    "label": "footer",
+    "file": "mobile-small/footer.png"
+  }
+]

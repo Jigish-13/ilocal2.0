@@ -1,0 +1,722 @@
+{
+  "capturedAt": "2026-10-05T08:59:33.765Z",
+  "profiles": [
+    [
+      "desktop",
+      1440,
+      1000
+    ],
+    [
+      "desktop-wide",
+      1920,
+      1080
+    ],
+    [
+      "tablet-portrait",
+      768,
+      1024
+    ],
+    [
+      "mobile",
+      390,
+      844
+    ],
+    [
+      "mobile-small",
+      360,
+      800
+    ]
+  ],
+  "records": [
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "typography",
+      "file": "desktop/genspark/typography.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "workflow",
+      "file": "desktop/genspark/workflow.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "cloud",
+      "file": "desktop/genspark/cloud.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "hardware",
+      "file": "desktop/genspark/hardware.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "installation",
+      "file": "desktop/genspark/installation.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "genspark",
+      "section": "audiences",
+      "file": "desktop/genspark/audiences.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v1",
+      "section": "typography",
+      "file": "desktop/v1/typography.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v1",
+      "section": "workflow",
+      "file": "desktop/v1/workflow.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v1",
+      "section": "cloud",
+      "file": "desktop/v1/cloud.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v1",
+      "section": "hardware",
+      "file": "desktop/v1/hardware.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v1",
+      "section": "audiences",
+      "file": "desktop/v1/audiences.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "typography",
+      "file": "desktop/v2/typography.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "workflow",
+      "file": "desktop/v2/workflow.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "cloud",
+      "file": "desktop/v2/cloud.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "hardware",
+      "file": "desktop/v2/hardware.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "installation",
+      "file": "desktop/v2/installation.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "audiences",
+      "file": "desktop/v2/audiences.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "Devices & Hardware",
+      "file": "desktop/v2/cloud-devices-and-hardware.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "Workflow Configuration",
+      "file": "desktop/v2/cloud-workflow-configuration.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "Audience 2",
+      "file": "desktop/v2/audience-2.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "Audience 3",
+      "file": "desktop/v2/audience-3.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "Audience 4",
+      "file": "desktop/v2/audience-4.png"
+    },
+    {
+      "viewport": "desktop",
+      "version": "v2",
+      "section": "All hardware modules",
+      "file": "desktop/v2/hardware-all-modules.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "typography",
+      "file": "desktop-wide/genspark/typography.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "workflow",
+      "file": "desktop-wide/genspark/workflow.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "cloud",
+      "file": "desktop-wide/genspark/cloud.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "hardware",
+      "file": "desktop-wide/genspark/hardware.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "installation",
+      "file": "desktop-wide/genspark/installation.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "genspark",
+      "section": "audiences",
+      "file": "desktop-wide/genspark/audiences.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v1",
+      "section": "typography",
+      "file": "desktop-wide/v1/typography.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v1",
+      "section": "workflow",
+      "file": "desktop-wide/v1/workflow.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v1",
+      "section": "cloud",
+      "file": "desktop-wide/v1/cloud.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v1",
+      "section": "hardware",
+      "file": "desktop-wide/v1/hardware.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v1",
+      "section": "audiences",
+      "file": "desktop-wide/v1/audiences.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "typography",
+      "file": "desktop-wide/v2/typography.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "workflow",
+      "file": "desktop-wide/v2/workflow.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "cloud",
+      "file": "desktop-wide/v2/cloud.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "hardware",
+      "file": "desktop-wide/v2/hardware.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "installation",
+      "file": "desktop-wide/v2/installation.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "audiences",
+      "file": "desktop-wide/v2/audiences.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "Devices & Hardware",
+      "file": "desktop-wide/v2/cloud-devices-and-hardware.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "Workflow Configuration",
+      "file": "desktop-wide/v2/cloud-workflow-configuration.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "Audience 2",
+      "file": "desktop-wide/v2/audience-2.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "Audience 3",
+      "file": "desktop-wide/v2/audience-3.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "Audience 4",
+      "file": "desktop-wide/v2/audience-4.png"
+    },
+    {
+      "viewport": "desktop-wide",
+      "version": "v2",
+      "section": "All hardware modules",
+      "file": "desktop-wide/v2/hardware-all-modules.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "typography",
+      "file": "tablet-portrait/genspark/typography.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "workflow",
+      "file": "tablet-portrait/genspark/workflow.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "cloud",
+      "file": "tablet-portrait/genspark/cloud.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "hardware",
+      "file": "tablet-portrait/genspark/hardware.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "installation",
+      "file": "tablet-portrait/genspark/installation.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "genspark",
+      "section": "audiences",
+      "file": "tablet-portrait/genspark/audiences.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v1",
+      "section": "typography",
+      "file": "tablet-portrait/v1/typography.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v1",
+      "section": "workflow",
+      "file": "tablet-portrait/v1/workflow.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v1",
+      "section": "cloud",
+      "file": "tablet-portrait/v1/cloud.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v1",
+      "section": "hardware",
+      "file": "tablet-portrait/v1/hardware.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v1",
+      "section": "audiences",
+      "file": "tablet-portrait/v1/audiences.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "typography",
+      "file": "tablet-portrait/v2/typography.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "workflow",
+      "file": "tablet-portrait/v2/workflow.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "cloud",
+      "file": "tablet-portrait/v2/cloud.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "hardware",
+      "file": "tablet-portrait/v2/hardware.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "installation",
+      "file": "tablet-portrait/v2/installation.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "audiences",
+      "file": "tablet-portrait/v2/audiences.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "Devices & Hardware",
+      "file": "tablet-portrait/v2/cloud-devices-and-hardware.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "Workflow Configuration",
+      "file": "tablet-portrait/v2/cloud-workflow-configuration.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "Audience 2",
+      "file": "tablet-portrait/v2/audience-2.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "Audience 3",
+      "file": "tablet-portrait/v2/audience-3.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "Audience 4",
+      "file": "tablet-portrait/v2/audience-4.png"
+    },
+    {
+      "viewport": "tablet-portrait",
+      "version": "v2",
+      "section": "All hardware modules",
+      "file": "tablet-portrait/v2/hardware-all-modules.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "typography",
+      "file": "mobile/genspark/typography.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "workflow",
+      "file": "mobile/genspark/workflow.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "cloud",
+      "file": "mobile/genspark/cloud.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "hardware",
+      "file": "mobile/genspark/hardware.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "installation",
+      "file": "mobile/genspark/installation.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "genspark",
+      "section": "audiences",
+      "file": "mobile/genspark/audiences.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v1",
+      "section": "typography",
+      "file": "mobile/v1/typography.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v1",
+      "section": "workflow",
+      "file": "mobile/v1/workflow.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v1",
+      "section": "cloud",
+      "file": "mobile/v1/cloud.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v1",
+      "section": "hardware",
+      "file": "mobile/v1/hardware.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v1",
+      "section": "audiences",
+      "file": "mobile/v1/audiences.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "typography",
+      "file": "mobile/v2/typography.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "workflow",
+      "file": "mobile/v2/workflow.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "cloud",
+      "file": "mobile/v2/cloud.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "hardware",
+      "file": "mobile/v2/hardware.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "installation",
+      "file": "mobile/v2/installation.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "audiences",
+      "file": "mobile/v2/audiences.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "Devices & Hardware",
+      "file": "mobile/v2/cloud-devices-and-hardware.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "Workflow Configuration",
+      "file": "mobile/v2/cloud-workflow-configuration.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "Audience 2",
+      "file": "mobile/v2/audience-2.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "Audience 3",
+      "file": "mobile/v2/audience-3.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "Audience 4",
+      "file": "mobile/v2/audience-4.png"
+    },
+    {
+      "viewport": "mobile",
+      "version": "v2",
+      "section": "All hardware modules",
+      "file": "mobile/v2/hardware-all-modules.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "typography",
+      "file": "mobile-small/genspark/typography.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "workflow",
+      "file": "mobile-small/genspark/workflow.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "cloud",
+      "file": "mobile-small/genspark/cloud.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "hardware",
+      "file": "mobile-small/genspark/hardware.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "installation",
+      "file": "mobile-small/genspark/installation.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "genspark",
+      "section": "audiences",
+      "file": "mobile-small/genspark/audiences.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v1",
+      "section": "typography",
+      "file": "mobile-small/v1/typography.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v1",
+      "section": "workflow",
+      "file": "mobile-small/v1/workflow.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v1",
+      "section": "cloud",
+      "file": "mobile-small/v1/cloud.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v1",
+      "section": "hardware",
+      "file": "mobile-small/v1/hardware.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v1",
+      "section": "audiences",
+      "file": "mobile-small/v1/audiences.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "typography",
+      "file": "mobile-small/v2/typography.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "workflow",
+      "file": "mobile-small/v2/workflow.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "cloud",
+      "file": "mobile-small/v2/cloud.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "hardware",
+      "file": "mobile-small/v2/hardware.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "installation",
+      "file": "mobile-small/v2/installation.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "audiences",
+      "file": "mobile-small/v2/audiences.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "Devices & Hardware",
+      "file": "mobile-small/v2/cloud-devices-and-hardware.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "Workflow Configuration",
+      "file": "mobile-small/v2/cloud-workflow-configuration.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "Audience 2",
+      "file": "mobile-small/v2/audience-2.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "Audience 3",
+      "file": "mobile-small/v2/audience-3.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "Audience 4",
+      "file": "mobile-small/v2/audience-4.png"
+    },
+    {
+      "viewport": "mobile-small",
+      "version": "v2",
+      "section": "All hardware modules",
+      "file": "mobile-small/v2/hardware-all-modules.png"
+    }
+  ]
+}

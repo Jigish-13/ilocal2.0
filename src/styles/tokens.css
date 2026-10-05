@@ -34,6 +34,12 @@
   --z-skip: 100;
   --type-section: clamp(2.6rem, 5.5vw, 5.6rem);
   --type-body: 1rem;
+  --type-navigation: 0.975rem;
+  --type-support: 1rem;
+  --type-caption: 0.8125rem;
+  --type-label: 0.75rem;
+  --anchor-offset: 112px;
+  --cloud-mist: #eaf0ef;
 }
 @theme inline {
   --color-paper: var(--paper);

@@ -50,7 +50,7 @@ export default async function OpenGraphImage() {
           paddingTop: 22,
         }}
       >
-        Kiosk · Counter · Curbside · Bedside · Courier · Mail Order
+        Kiosk · Counter · Curbside · Bedside · Courier
       </div>
     </div>,
     size,

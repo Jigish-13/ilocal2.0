@@ -1,5 +1,5 @@
 import type { SolutionId } from '@/content/solutions';
-export function HandoffIllustration({ type }: { type: SolutionId }) {
+export function HandoffIllustration({ type }: { type: Exclude<SolutionId, 'kiosk'> }) {
   return (
     <svg
       viewBox="0 0 560 420"
@@ -12,12 +12,22 @@ export function HandoffIllustration({ type }: { type: SolutionId }) {
             ? 'Illustration connecting patient arrival, a parked vehicle and pharmacy staff'
             : type === 'bedside'
               ? 'Illustration of medication moving from pharmacy to runner to hospital room'
-              : type === 'courier'
-                ? 'Illustration of a pharmacy delivery handoff connected to a home'
-                : 'Illustration of remote pharmacy fulfillment reaching a patient'
+              : 'Illustration of a pharmacy delivery handoff connected to a home'
       }
     >
       <path d="M55 320 H505 M80 355 H475" stroke="currentColor" opacity=".15" fill="none" />
+      <g aria-hidden="true">
+        <path d="M45 315 L295 380 L515 300 L265 245Z" fill="currentColor" opacity=".055" />
+        <path d="M45 315 V325 L295 390 V380Z" fill="currentColor" opacity=".09" />
+        <path d="M295 380 V390 L515 310 V300Z" fill="currentColor" opacity=".13" />
+        <path
+          d="M50 72 V287 M50 72 L295 38 L510 100 V292"
+          stroke="currentColor"
+          opacity=".12"
+          fill="none"
+        />
+        <circle cx="510" cy="100" r="5" fill="var(--gold)" />
+      </g>
       {type === 'counter' ? (
         <>
           <rect x="280" y="80" width="200" height="180" rx="8" fill="currentColor" opacity=".05" />
@@ -138,31 +148,42 @@ export function HandoffIllustration({ type }: { type: SolutionId }) {
       ) : (
         <>
           <path
-            d="M80 266 C175 266 147 145 273 145 S377 268 475 268"
-            stroke="currentColor"
-            strokeWidth="2"
+            d="M80 145 C180 90 210 100 270 150 S410 205 475 165"
             fill="none"
+            stroke="currentColor"
+            opacity=".35"
             strokeDasharray="5 8"
           />
-          <circle cx="80" cy="266" r="7" fill="var(--gold)" />
-          <circle cx="475" cy="266" r="7" fill="var(--gold)" />
+          <rect x="65" y="138" width="80" height="117" rx="4" fill="currentColor" opacity=".12" />
+          <path d="M84 177 H126 M105 156 V198" stroke="currentColor" strokeWidth="3" />
           <path
-            d="M365 208 L422 164 L480 208 V291 H365Z"
+            d="M365 130 L420 89 L485 135 V252 H365Z"
             fill="currentColor"
-            opacity=".08"
+            opacity=".07"
             stroke="currentColor"
           />
-          <path d="M411 291 V246 H437 V291" fill="none" stroke="currentColor" />
-          <rect x="90" y="165" width="71" height="91" rx="4" fill="currentColor" opacity=".15" />
-          <path d="M110 194 H140 M125 179 V209" stroke="currentColor" strokeWidth="3" />
-          <g transform="translate(235,184) rotate(-8)">
-            <rect width="90" height="70" rx="4" fill="var(--gold)" />
-            <path d="M45 0 V28 M0 14 L45 28 L90 14" stroke="var(--navy)" opacity=".4" fill="none" />
-          </g>
+          <path d="M405 252 V205 H437 V252" fill="none" stroke="currentColor" />
+          <path
+            d="M165 270 V196 H298 L339 221 H363 V270Z"
+            fill="var(--paper)"
+            stroke="currentColor"
+            strokeWidth="2"
+          />
+          <path d="M302 204 L329 226 H303Z" fill="currentColor" opacity=".25" />
+          <rect x="187" y="218" width="87" height="37" rx="4" fill="var(--teal)" />
+          <path
+            d="M218 236 H244 M237 228 L246 236 L237 244"
+            stroke="var(--white)"
+            strokeWidth="2"
+            fill="none"
+          />
+          <circle cx="203" cy="274" r="20" fill="currentColor" />
+          <circle cx="329" cy="274" r="20" fill="currentColor" />
+          <circle cx="203" cy="274" r="9" fill="var(--paper)" />
+          <circle cx="329" cy="274" r="9" fill="var(--paper)" />
+          <rect x="275" y="235" width="19" height="20" fill="var(--gold)" />
           <text x="280" y="390" textAnchor="middle">
-            {type === 'courier'
-              ? 'PHARMACY → COORDINATED DELIVERY → HOME'
-              : 'A CONNECTED PHARMACY, FROM A DISTANCE'}
+            PHARMACY → COORDINATED DELIVERY → HOME
           </text>
         </>
       )}

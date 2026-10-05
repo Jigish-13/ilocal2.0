@@ -1,3 +1,4 @@
+import { ProductInterfaceFrame } from '@/components/ui/ProductInterfaceFrame';
 import { PageIntro } from '@/components/ui/PageIntro';
 import { PlatformJourney } from '@/components/home/PlatformJourney';
 import { PharmacyWorkflow } from '@/components/home/PharmacyWorkflow';
@@ -25,6 +26,7 @@ export default function PlatformPage() {
       <PharmacyWorkflow />
       <CloudExperience />
       <PatientJourney />
+      <ProductInterfaceFrame />
       <FinalCTA />
     </main>
   );

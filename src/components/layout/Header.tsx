@@ -6,9 +6,16 @@ import { navigation, loginHref } from '@/content/navigation';
 export function Header() {
   const [open, setOpen] = useState<string | null>(null);
   const [mobile, setMobile] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const header = useRef<HTMLElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
   const mobilePanel = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    const update = () => setScrolled(window.scrollY > 40);
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, []);
   useEffect(() => {
     const close = (e: PointerEvent) => {
       if (!header.current?.contains(e.target as Node)) setOpen(null);
@@ -39,6 +46,7 @@ export function Header() {
   return (
     <header
       className="site-header"
+      data-scrolled={scrolled}
       ref={header}
       onKeyDown={(e) => {
         if (e.key === 'Escape' && open) {
@@ -68,30 +76,49 @@ export function Header() {
                       onClick={() => setOpen(open === item.label ? null : item.label)}
                     >
                       {item.label}
-                      <span aria-hidden="true">⌄</span>
+                      <svg
+                        className="nav-chevron"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m3 6 5 5 5-5"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </button>
                     <div
                       id={`menu-${item.label.replaceAll(' ', '-')}`}
-                      className="mega-menu"
+                      className={`mega-menu ${item.label === 'Who We Serve' ? 'mega-audiences' : ''}`}
                       hidden={open !== item.label}
                     >
-                      <div className="mega-intro">
-                        <p className="eyebrow">The iLocal platform</p>
-                        <p>
-                          Every path.
-                          <br />
-                          <em>Connected.</em>
-                        </p>
-                        <Link href={item.href} onClick={() => setOpen(null)}>
-                          Explore {item.label} <span aria-hidden="true">↗</span>
-                        </Link>
-                      </div>
+                      {item.intro && (
+                        <div className="mega-intro">
+                          <p className="eyebrow">{item.intro.label}</p>
+                          <p>{item.intro.headline}</p>
+                          <Link href={item.href} onClick={() => setOpen(null)}>
+                            {item.intro.cta} <span className="menu-connection" aria-hidden="true" />
+                          </Link>
+                        </div>
+                      )}
                       <ul>
-                        {item.children.map((child) => (
+                        {item.children.map((child, index) => (
                           <li key={child.href + child.label}>
                             <Link href={child.href} onClick={() => setOpen(null)}>
-                              <strong>{child.label}</strong>
-                              {child.description && <span>{child.description}</span>}
+                              <span
+                                className={`menu-symbol menu-symbol-${index}`}
+                                aria-hidden="true"
+                              />
+                              <div>
+                                <strong>{child.label}</strong>
+                                {child.description && <span>{child.description}</span>}
+                              </div>
                             </Link>
                           </li>
                         ))}
@@ -107,10 +134,10 @@ export function Header() {
         </nav>
         <div className="header-actions">
           <Link className="login-link" href={loginHref}>
-            Customer Login <span aria-hidden="true">↗</span>
+            Customer Login
           </Link>
           <Link className="button button-small" href="/contact">
-            Book a Demo <span aria-hidden="true">↗</span>
+            Book a Demo
           </Link>
           <button
             ref={toggle}
@@ -150,8 +177,14 @@ export function Header() {
               {item.children && (
                 <div className="mobile-subnav">
                   {item.children.map((child) => (
-                    <Link key={child.href + child.label} href={child.href} onClick={closeMobile}>
+                    <Link
+                      key={child.href + child.label}
+                      aria-label={child.label}
+                      href={child.href}
+                      onClick={closeMobile}
+                    >
                       {child.label}
+                      {child.description && <small>{child.description}</small>}
                     </Link>
                   ))}
                 </div>

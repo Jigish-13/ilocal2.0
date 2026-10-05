@@ -330,15 +330,6 @@ h2 {
 .chapter-courier {
   background: #eee6d0;
 }
-.chapter-mail-order {
-  background: #193a8e;
-}
-.chapter-mail-order .chapter-visual {
-  order: -1;
-}
-.chapter-mail-order .chapter-foot {
-  order: 2;
-}
 .handoff-illustration {
   width: 100%;
   height: auto;
@@ -731,9 +722,6 @@ h2 {
     max-height: 330px;
   }
   .chapter-counter .chapter-visual,
-  .chapter-mail-order .chapter-visual {
-    order: 0;
-  }
   .chapter-bedside .chapter-copy {
     order: 0;
   }

@@ -1,4 +1,4 @@
-export type SolutionId = 'kiosk' | 'counter' | 'curbside' | 'bedside' | 'courier' | 'mail-order';
+export type SolutionId = 'kiosk' | 'counter' | 'curbside' | 'bedside' | 'courier';
 export interface Solution {
   id: SolutionId;
   name: string;
@@ -80,20 +80,5 @@ export const solutions: Solution[] = [
     features: ['Coordinated local delivery', 'Custody visibility', 'Patient communication'],
     note: 'Delivery arrangements and operational capabilities depend on the pharmacy’s configuration.',
     color: '#f0c052',
-  },
-  {
-    id: 'mail-order',
-    name: 'Mail Order',
-    shortName: 'Mail Order',
-    headline: 'However far, still connected.',
-    description:
-      'Extend the pharmacy relationship beyond a physical visit, with remote fulfillment, patient communication and visibility into fulfillment status.',
-    features: [
-      'Remote fulfillment',
-      'Patient communication and status visibility',
-      'Enrollment and consultation where supported',
-    ],
-    note: 'Carrier services and remote workflow steps vary by implementation.',
-    color: '#e7a778',
   },
 ];

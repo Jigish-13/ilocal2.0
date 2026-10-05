@@ -1,7 +1,7 @@
 export const homepage = {
   eyebrow: 'The Pharmacy-to-Patient Platform',
   description:
-    'iLocal connects the technology, workflows and patient experiences behind modern pharmacy fulfillment—from Kiosk and Counter to Curbside, Bedside, Courier and Mail Order.',
+    'iLocal connects the technology, workflows and patient experiences behind modern pharmacy fulfillment—from Kiosk and Counter to Curbside, Bedside and Courier.',
   opportunities: [
     {
       time: 'After the shift',
@@ -25,7 +25,7 @@ export const homepage = {
       time: 'Closer to home',
       title: 'Distance is part of the journey.',
       text: 'Medication reaches a patient who cannot easily reach the pharmacy.',
-      path: 'Courier / Mail Order',
+      path: 'Courier',
     },
   ],
   scenarios: [

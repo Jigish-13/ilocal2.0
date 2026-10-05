@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next';
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants';
 const config: NextConfig = {
   poweredByHeader: false,
   devIndicators: false,
@@ -7,6 +8,7 @@ const config: NextConfig = {
   images: { formats: ['image/avif', 'image/webp'] },
   async redirects() {
     return [
+      { source: '/solutions/mail-order', destination: '/solutions', statusCode: 301 },
       {
         source: '/industries/pharmacy/:path*',
         destination: '/who-we-serve#retail',
@@ -40,4 +42,6 @@ const config: NextConfig = {
     ];
   },
 };
-export default config;
+export default function nextConfig(phase: string): NextConfig {
+  return { ...config, distDir: phase === PHASE_DEVELOPMENT_SERVER ? '.next-local' : '.next' };
+}

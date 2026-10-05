@@ -1,0 +1,295 @@
+/* Release polish: shared small-type hierarchy; approved display scale is unchanged. */
+html {
+  scroll-padding-top: var(--anchor-offset);
+}
+main,
+main section[id],
+main article[id] {
+  scroll-margin-top: 12px;
+}
+.desktop-nav > ul > li > button,
+.desktop-nav > ul > li > a,
+.login-link {
+  font-size: var(--type-navigation);
+  font-weight: 500;
+  color: var(--ink);
+}
+.desktop-nav > ul {
+  gap: 22px;
+}
+.header-inner {
+  gap: 30px;
+}
+.eyebrow,
+.section-label {
+  font-size: var(--type-label);
+}
+.section-heading > p,
+.hero-copy,
+.chapter-copy > p:not(.eyebrow),
+.step-description,
+.opportunity-stories article > p:not(.eyebrow),
+.scenario > p,
+.trust-principles p,
+.audience-values li,
+.hardware-note,
+.page-intro > p:not(.eyebrow),
+.content-section p {
+  font-size: var(--type-support);
+  line-height: 1.6;
+}
+.text-link,
+.mobile-subnav,
+.footer nav > div,
+.footer nav > div:last-child,
+.footer-top .text-link {
+  font-size: var(--type-navigation);
+}
+.footer nav > div:last-child {
+  color: #c5cedd;
+}
+.footer-bottom,
+.journey-note,
+.cloud-footnote,
+.hardware-disclaimer,
+.hardware-controls button small,
+.capabilities-row p {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+.cloud {
+  background: var(--cloud-mist);
+}
+.cloud-shell {
+  border: 1px solid #07163c30;
+  border-radius: 16px;
+  box-shadow: 0 18px 48px #07163c12;
+}
+.cloud-toolbar {
+  padding: 16px 24px;
+  gap: 16px;
+}
+.cloud-canvas-brand {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--white);
+}
+.cloud-canvas-brand em {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+.cloud-toolbar .illustrative-label {
+  font-size: var(--type-label);
+  letter-spacing: 0.07em;
+}
+.console-body {
+  display: block;
+}
+.cloud-panel {
+  padding: 28px;
+  min-height: 540px;
+}
+.cloud-panel:not([hidden]) {
+  animation: cloud-reveal 240ms var(--ease-out);
+}
+@keyframes cloud-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.console-context,
+.cloud-panel-heading > span,
+.console-summary small,
+.device-signals small,
+.ledger-heading,
+.ledger-row small,
+.state-pill,
+.console-note,
+.temperature-visual span,
+.temperature-visual small,
+.config-value,
+.cloud-hardware-visual figcaption {
+  font-size: var(--type-caption);
+}
+.console-summary strong,
+.ledger-row,
+.ledger-row strong,
+.device-signals strong,
+.config-preview li,
+.config-preview p,
+.cloud-tab-description {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.console-context {
+  flex-wrap: wrap;
+}
+.console-summary {
+  gap: 12px;
+}
+.ledger-row {
+  padding-block: 16px;
+}
+.cloud-hardware-visual {
+  margin: 0;
+  padding: 20px;
+  background: var(--paper);
+  border-radius: 10px;
+}
+.cloud-hardware-images {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 4px;
+  padding-block: 18px;
+}
+.cloud-hardware-images img {
+  width: 58%;
+  height: 240px;
+  object-fit: contain;
+}
+.cloud-hardware-images img + img {
+  width: 42%;
+  height: 205px;
+}
+.cloud-hardware-visual figcaption {
+  color: var(--muted);
+  line-height: 1.5;
+}
+.device-overview {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+.site-layout-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  overflow: visible;
+}
+.installation-planning > p {
+  font-size: var(--type-caption) !important;
+}
+@media (max-width: 1100px) {
+  .cloud-panel {
+    padding: 24px;
+  }
+}
+@media (max-width: 700px) {
+  :root {
+    --anchor-offset: 92px;
+  }
+  .header-inner {
+    gap: 14px;
+  }
+  .cloud-toolbar {
+    padding: 14px 16px;
+    gap: 10px;
+  }
+  .cloud-toolbar .illustrative-label {
+    font-size: 0.6875rem;
+    letter-spacing: 0.03em;
+  }
+  .cloud-panel {
+    padding: 22px 16px;
+    min-height: 0;
+  }
+  .cloud-panel-heading {
+    flex-wrap: wrap;
+  }
+  .cloud-panel-heading > span {
+    text-align: left;
+  }
+  .console-summary {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .console-summary > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .console-summary small {
+    margin: 0;
+  }
+  .ledger-row > span:not(.state-pill) {
+    font-size: var(--type-caption);
+  }
+  .device-overview {
+    grid-template-columns: 1fr;
+  }
+  .cloud-hardware-images img {
+    height: 210px;
+  }
+  .cloud-hardware-images img + img {
+    height: 180px;
+  }
+  .config-preview li {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer nav > div,
+  .footer nav > div:last-child {
+    font-size: var(--type-navigation);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cloud-panel:not([hidden]) {
+    animation: none;
+  }
+}
+
+/* Meaningful secondary copy shares the same scale across marketing and form pages. */
+.platform-heading > p,
+.cta-copy > p:not(.eyebrow),
+.fulfillment-intro > p,
+.hardware-detail > p,
+.hardware-capabilities p,
+.audience-values li,
+.audience-detail-grid > div > p:not(.eyebrow),
+.solution-note,
+.form-intro {
+  font-size: var(--type-support);
+  line-height: 1.6;
+}
+.hero-paths a,
+.route-controls button,
+.hardware-controls button,
+.form-field label,
+.form-field input,
+.form-field select,
+main .button {
+  font-size: var(--type-navigation);
+}
+.hero-paths > span,
+.chapter-foot,
+.visual-caption,
+.hardware-stage figcaption,
+.showroom-label,
+.form-safety,
+.field-error,
+.optional,
+.breadcrumb,
+.mega-links a small {
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+.temperature-visual > div > strong {
+  font-size: var(--type-navigation);
+}
+.site-layout-illustration text {
+  fill: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 15px;
+}
+.site-layout-illustration .layout-caption {
+  font-size: 14px;
+}

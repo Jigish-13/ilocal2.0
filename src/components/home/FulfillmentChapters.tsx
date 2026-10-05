@@ -7,7 +7,7 @@ export function FulfillmentChapters() {
   return (
     <section id="solutions" className="fulfillment" aria-labelledby="fulfillment-title">
       <div className="wrap fulfillment-intro section-space">
-        <SectionLabel number="03">Six fulfillment experiences</SectionLabel>
+        <SectionLabel number="03">Five fulfillment experiences</SectionLabel>
         <h2 id="fulfillment-title">
           Different paths.
           <br />
@@ -18,13 +18,13 @@ export function FulfillmentChapters() {
       {solutions.map((s, i) => (
         <article
           key={s.id}
-          className={`chapter chapter-${s.id} ${['kiosk', 'curbside', 'mail-order'].includes(s.id) ? 'on-dark' : ''}`}
+          className={`chapter chapter-${s.id} ${['kiosk', 'curbside'].includes(s.id) ? 'on-dark' : ''}`}
           id={`chapter-${s.id}`}
         >
           <div className="wrap chapter-grid">
             <div className="chapter-copy">
               <p className="eyebrow">
-                <span>0{i + 1} / 06</span>
+                <span>0{i + 1} / 05</span>
                 <span className="label-rule" />
                 {s.name}
               </p>

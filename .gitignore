@@ -9,3 +9,8 @@ test-results/
 coverage/
 *.tsbuildinfo
 .DS_Store
+.next-local/
+
+# Local historical screenshot export (current validation captures are in docs).
+/screenshots/
+/screenshots.zip

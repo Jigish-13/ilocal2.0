@@ -25,7 +25,7 @@ The non-hardware SVG handoff diagrams are original, explicitly illustrative vect
 - Kiosk access is site-dependent; detail pages state the hours/configuration boundary. No universal autonomous 24/7 promise.
 - Counter remains a staffed handoff; Curbside remains a staff-to-vehicle handoff; Bedside connects pharmacy, runner and hospital room.
 - Patient steps are configurable. Consultation is conditional on site workflow and service availability.
-- Courier/Mail Order copy remains high-level. No carrier, route optimization, guaranteed tracking integration, or clinical-outcome claim.
+- Courier copy remains high-level. No carrier, route optimization, guaranteed tracking integration, or clinical-outcome claim.
 - No customers, testimonials, statistics, certifications or partner badges have been invented.
 - Resources are explanatory product guides, not fabricated articles, dated news or case studies.
 - Privacy, Terms and customer login are explicit local-preview notices pending business-approved content/destination. They are excluded from the sitemap and marked noindex.

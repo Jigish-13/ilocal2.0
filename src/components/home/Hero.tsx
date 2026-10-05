@@ -11,7 +11,6 @@ export function Hero() {
             <span className="brand-dot" />
             {homepage.eyebrow}
           </p>
-          <span className="formerly">Formerly iLocalBox</span>
         </div>
         <h1 id="hero-title">
           Every path from
@@ -67,7 +66,7 @@ export function Hero() {
           </div>
         </div>
         <div className="hero-paths">
-          <span className="eyebrow">Six ways. One connection.</span>
+          <span className="eyebrow">Five ways. One connection.</span>
           <div>
             {solutions.map((s) => (
               <Link key={s.id} href={`/solutions/${s.id}`}>

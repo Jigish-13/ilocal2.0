@@ -1,6 +1,7 @@
 export const audiences = [
   {
     id: 'health-systems',
+    commonPaths: ['Bedside', 'Kiosk', 'Courier'],
     name: 'Health Systems',
     title: 'Connected care, beyond the counter.',
     description:
@@ -10,6 +11,7 @@ export const audiences = [
   },
   {
     id: 'retail',
+    commonPaths: ['Kiosk', 'Counter', 'Curbside', 'Courier'],
     name: 'Retail Pharmacy',
     title: 'Many locations. A connected experience.',
     description:
@@ -19,6 +21,7 @@ export const audiences = [
   },
   {
     id: 'community',
+    commonPaths: ['Counter', 'Kiosk', 'Courier'],
     name: 'Independent & Community Pharmacy',
     title: 'Local care. A wider reach.',
     description:
@@ -28,6 +31,7 @@ export const audiences = [
   },
   {
     id: 'employers',
+    commonPaths: ['Kiosk'],
     name: 'Employers & Organizations',
     title: 'Closer to where life happens.',
     description:

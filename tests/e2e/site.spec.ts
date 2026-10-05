@@ -41,7 +41,7 @@ test('demo form validates, submits safe mock and does not claim delivery', async
   await expect(page.getByLabel('Name', { exact: false })).toBeFocused();
   await page.getByLabel('Name', { exact: false }).fill('Demo User');
   await page.getByLabel('Work Email').fill('demo@example.com');
-  await page.getByLabel('Organization', { exact: false }).fill('Example Pharmacy');
+  await page.getByRole('textbox', { name: 'Organization', exact: true }).fill('Example Pharmacy');
   await page.getByLabel('Area of Interest').selectOption('Kiosk');
   await page.getByRole('button', { name: 'Book a Demo', exact: true }).click();
   await expect(page.getByRole('status')).toContainText('no request was sent or saved');
@@ -127,7 +127,6 @@ test('SEO, public routes and legacy redirect', async ({ page, request }) => {
     '/solutions/curbside',
     '/solutions/bedside',
     '/solutions/courier',
-    '/solutions/mail-order',
     '/who-we-serve',
     '/technology',
     '/resources',

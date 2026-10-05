@@ -1,3 +1,4 @@
+import { ProductInterfaceFrame } from '@/components/ui/ProductInterfaceFrame';
 import { PageIntro } from '@/components/ui/PageIntro';
 import { HardwareConfigurator } from '@/components/home/HardwareConfigurator';
 import { CloudExperience } from '@/components/home/CloudExperience';
@@ -26,6 +27,7 @@ export default function TechnologyPage() {
       <HardwareConfigurator />
       <CloudExperience />
       <Trust />
+      <ProductInterfaceFrame />
       <FinalCTA />
     </main>
   );
